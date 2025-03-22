@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tabs .active1 {
+    padding: 5px 10px;
+    background-color: lightblue;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="converter">
+            <h2>Unit Converter</h2>
+            <div class="tabs">
+                <a href="main.html" class="active">Length</a>
+                <a href="weight.html" class="active1">Weight</a>
+                <a href="temperature.html" class="active2">Temperature</a>
+            </div>
+            <label>Enter the length to convert</label>
+            <input type="number" id="inputValue" placeholder="Enter value">
+            
+            <label>Unit to Convert from</label>
+            <input type="text" id="fromUnit" placeholder="e.g. ft">
+            
+            <label>Unit to Convert to</label>
+            <input type="text" id="toUnit" placeholder="e.g. cm">
+            
+            <button onclick="convert()">Convert</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

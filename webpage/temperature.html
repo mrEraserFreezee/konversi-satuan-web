@@ -27,10 +27,18 @@
             <input type="number" id="inputValue" placeholder="Enter value">
             
             <label>Unit to Convert from</label>
-            <input type="text" id="fromUnit" placeholder="e.g. ft">
+            <select id="fromUnit">
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select>
             
             <label>Unit to Convert to</label>
-            <input type="text" id="toUnit" placeholder="e.g. cm">
+            <select id="toUnit">
+                <option value="Celsius">Celsius (°C)</option>
+                <option value="Fahrenheit">Fahrenheit (°F)</option>
+                <option value="Kelvin">Kelvin (K)</option>
+            </select>
             
             <button onclick="convert()">Convert</button>
         </div>

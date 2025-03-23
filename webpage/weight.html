@@ -27,10 +27,22 @@
             <input type="number" id="inputValue" placeholder="Enter value">
             
             <label>Unit to Convert from</label>
-            <input type="text" id="fromUnit" placeholder="e.g. ft">
+            <select id="fromUnit">
+                <option value="kg">Kilograms (kg)</option>
+                <option value="g">Grams (g)</option>
+                <option value="oz">Ounces (oz)</option>
+                <option value="lb">Pounds (lb)</option>
+                <option value="t">Tons (t)</option>
+            </select>
             
             <label>Unit to Convert to</label>
-            <input type="text" id="toUnit" placeholder="e.g. cm">
+            <select id="toUnit">
+                <option value="kg">Kilograms (kg)</option>
+                <option value="g">Grams (g)</option>
+                <option value="oz">Ounces (oz)</option>
+                <option value="lb">Pounds (lb)</option>
+                <option value="t">Tons (t)</option>
+            </select>
             
             <button onclick="convert()">Convert</button>
         </div>
